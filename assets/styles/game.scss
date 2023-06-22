@@ -1,0 +1,120 @@
+ /**************************************
+ ** - Style-Batman-Game
+ **************************************/
+ @import './polices';
+ @import './colors';
+ @import './navbar';
+ @import './default';
+ @import './footer';
+
+#area {
+    background: url(../illustrations/illustrations_game/Batgame_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.batman-home {
+    .container {
+        border-top: 1px solid $white-dark;
+        height: 800px;
+        width: auto;
+        display: flex;              
+    }
+    .content {
+        text-transform: uppercase;
+        font-size: 36px;
+        text-align: left;
+        margin-top: -10px;
+        margin-left: 40px;
+        line-height: 1.5;
+        animation: section 2s ease-out;
+        @keyframes section {
+            from {
+            opacity: 0;
+            transform: translateX(-100%);
+            }
+            to {
+            opacity: 1;
+            transform: translateX(0%);
+            }
+        }  
+    }    
+}
+
+.scroll-btn {
+    img {
+        margin-top: 750px;
+        margin-right: 600px;
+        display: flex;
+    }    
+}
+
+.cinema-title {
+    padding: 75px;
+    font-family: 'Space_Grotesk_Bold';
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;  
+}
+
+.batman-personnage {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.home-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.quiz-container {    
+    width: 60%;
+    max-width: 600px;
+    margin: 40px auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    .counter {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        color: $white-dark;
+    }
+    .answer-list {
+        display: inline;
+    }
+    .quiz {
+        padding: 20px 0;
+        h2 {
+            background-color: red;
+            font-size: 15px;
+            color: $white-dark;
+            margin: 10px 0;
+        }
+        .btn {
+            background: $gray-light;
+            color: #fff;
+            width: 80%;
+            border: none;
+            padding: 8px 10px;
+            margin: 10px 0;
+            text-align: left;
+            cursor: pointer;
+        }
+    }
+
+    #next-question {
+        background: $white-dark;
+        color: white;
+        width: 200px;
+        border: 0;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 70px;
+        display: none;
+    }
+}

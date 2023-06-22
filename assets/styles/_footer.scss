@@ -1,0 +1,31 @@
+/**************************************
+ ** - Footer
+ **************************************/
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    img {
+        margin-bottom: 42.5px;
+    }
+}
+
+.footer_text {
+    font-family: "Space_Grotesk_Regular", sans-serif;
+    font-size: 12px;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.single-footer-widget p small {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+  
+  .footer-logo >img {
+    margin-bottom: 42.5px;
+}

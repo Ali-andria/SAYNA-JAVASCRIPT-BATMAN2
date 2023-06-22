@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/**************************************
+ ** - Style-Batman-Game
+ **************************************/
+/**************************************
+ ** - Polices-des-caractères
+ **************************************/
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(/assets/polices/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk-bold';
+  src: url(/assets/polices/SpaceGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'SpaceGrotestk-Regular';
+  src: url(/assets/polices/SpaceGrotesk-Regular.ttf);
+}
+
+/**************************************
+ ** - Couleurs-typo
+ **************************************/
+/**************************************
+ ** - Barre-de-navigation
+ **************************************/
+.batman-nav {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.batman-nav .navbar {
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.batman-nav .navbar img:hover {
+  cursor: pointer;
+  background: #ffff00;
+}
+
+.batman-nav .nav-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.batman-nav .nav-item a {
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.batman-nav .nav-item a.active {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.scroll-bar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 3.2%;
+  top: 200px;
+  z-index: 999;
+}
+
+.social-icon {
+  margin-top: 20px;
+  margin-right: 5px;
+  text-align: center;
+  z-index: 1;
+}
+
+.scroll-btn img {
+  margin-top: 220px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/**************************************
+ ** - Default
+ **************************************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid var(--gradient-white);
+  margin: 10px 30px 30px 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2, h3, h4, h5, .h2 {
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: 'Space_Grotesk_Bold', sans-serif;
+  padding: 40px;
+  font-size: 32px;
+}
+
+.content {
+  width: 45%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 200px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 45px;
+  letter-spacing: 0.3px;
+  font-family: 'Space_Grotesk_regular', sans-serif;
+}
+
+.h2 {
+  margin-top: -10px;
+  padding: 0;
+}
+
+.default-btn {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  color: #ffffff;
+  background: linear-gradient(70deg, #c4c4c4 20%, #890008 100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 20px;
+  -webkit-box-shadow: 0 7px 25px #0d0e09;
+          box-shadow: 0 7px 25px #0d0e09;
+  padding: 20px 30px 20px 20px;
+  margin: 15px;
+}
+
+.default-btn span {
+  width: 0;
+  height: 0;
+  position: absolute;
+  display: block;
+  font-family: 'Rajdhani', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #c4c4c4), to(#890008));
+  background: linear-gradient(#c4c4c4 60%, #890008 100%);
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.default-btn:hover, .default-btn:focus {
+  color: #ffffff;
+}
+
+.default-btn:hover span, .default-btn:focus span {
+  width: 180%;
+  height: 150px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/**************************************
+ ** - Footer
+ **************************************/
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  margin-bottom: 42.5px;
+}
+
+.footer_text {
+  font-family: "Space_Grotesk_Regular", sans-serif;
+  font-size: 12px;
+  padding-top: 200px;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.single-footer-widget p small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 10px;
+}
+
+.footer-logo > img {
+  margin-bottom: 42.5px;
+}
+
+#area {
+  background: url(../illustrations/illustrations_game/Batgame_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.batman-home .container {
+  border-top: 1px solid #c4c4c4;
+  height: 800px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.batman-home .content {
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: left;
+  margin-top: -10px;
+  margin-left: 40px;
+  line-height: 1.5;
+  -webkit-animation: section 2s ease-out;
+          animation: section 2s ease-out;
+}
+
+@-webkit-keyframes section {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes section {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.scroll-btn img {
+  margin-top: 750px;
+  margin-right: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cinema-title {
+  padding: 75px;
+  font-family: 'Space_Grotesk_Bold';
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.batman-personnage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -100px;
+}
+
+.home-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.quiz-container {
+  width: 60%;
+  max-width: 600px;
+  margin: 40px auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.quiz-container .counter {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: #c4c4c4;
+}
+
+.quiz-container .answer-list {
+  display: inline;
+}
+
+.quiz-container .quiz {
+  padding: 20px 0;
+}
+
+.quiz-container .quiz h2 {
+  font-size: 15px;
+  color: #c4c4c4;
+  margin: 10px 0;
+}
+
+.quiz-container #next-question {
+  background: #c4c4c4;
+  color: white;
+  width: 200px;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 70px;
+  display: none;
+}
+/*# sourceMappingURL=game.css.map */

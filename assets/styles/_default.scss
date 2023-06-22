@@ -1,0 +1,110 @@
+/**************************************
+ ** - Default
+ **************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $dark-brown;
+    color: $white-light;
+    border: 1px solid var(--gradient-white);
+    margin: 10px 30px 30px 10px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border-left: 1px solid $white-dark;
+    border-right: 1px solid $white-dark;
+}
+
+img  {
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin titre {
+    font-weight: 700;
+	line-height: 1.4;
+	font-family: 'Space_Grotesk_Bold', sans-serif;
+    padding: 40px;
+    font-size: 32px;
+}
+
+h2, h3, h4, h5, .h2 {
+	@include titre;
+}
+
+.content {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+}
+
+p {
+	font-size: 22px;
+	line-height: 1.5;
+	margin-bottom: 45px; 
+	letter-spacing: 0.3px;
+    font-family: 'Space_Grotesk_regular', sans-serif;
+}
+
+.h2 {
+    margin-top: -10px;
+    padding: 0;
+}
+
+.default-btn {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+	z-index: 1;
+	text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+	color: $white-light;
+    background: linear-gradient(70deg, $white-dark 20%, $red-dark 100%);
+    -webkit-transition: 0.4s;
+	transition: 0.4s;	
+	font-size: 20px;	
+    box-shadow: 0 7px 25px $dark;
+    padding: 20px 30px 20px 20px;
+    margin: 15px;
+}
+
+.default-btn span {
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: block;
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient($white-dark 60%, $red-dark 100%);
+    -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.default-btn:hover, .default-btn:focus {
+    color: $white-light;
+    span {
+        width: 180%;
+        height: 150px;
+    }
+}
+
+ul  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+

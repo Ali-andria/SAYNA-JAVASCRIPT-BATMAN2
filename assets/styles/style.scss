@@ -1,0 +1,471 @@
+/**************************************
+ ** - Style-Batman-Home
+ **************************************/
+ @import './polices';
+ @import './colors';
+ @import './navbar';
+ @import './default';
+ @import './footer';
+
+#batman {
+	z-index: 1;
+	height: 800px;
+    width: auto;
+    text-align: center;
+	background-repeat: no-repeat;
+}
+
+.batman-home {
+    .container {
+        border-top: 1px solid $white-dark;
+    }
+    .home-btn {
+        margin-top: -20px;        
+        display: inline;
+    }
+}
+
+#area {  
+    background: url(../illustrations/illustrations_home/Bathome1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cinema-title {
+    padding: 75px;
+    font-family: 'Space_Grotesk_Bold', sans-serif;
+    font-size: 26px;
+}
+  
+.cinema-content {
+    width: 83.5%;
+    margin-top: -11rem;
+    padding: 75px;
+    text-align: justify;
+}
+  
+.batman-personnage {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px;
+    margin-top: -100px;
+}
+
+.batman-personnage div:hover{
+    transform: scale(1.1);
+    transition: transform 0.9s ease-in-out;
+    transform-origin: center;
+}
+  
+.bio-info {
+    margin-top: 20px; 
+    text-align: center;
+    h3 {
+        font-family: 'Space_Grotesk_Bold', sans-serif;
+        font-size: 20px;
+    }
+    span {
+        font-family: 'Space_Grotesk_regular', sans-serif;
+    } 
+}
+
+.nemesis-title {
+    padding: 75px;
+    font-family: 'Space_Grotesk_Bold';
+    font-size: 26px;
+    img {
+        display: flex;
+        flex-direction: column;
+        display: block;
+        margin-bottom: -100px;
+        margin-top: -50px;
+        margin-left: 125px;
+        width: 150px;
+    }
+}
+   
+.nemesis-content {
+    width: 83.5%;
+    margin-top: -11rem;
+    padding: 75px;
+    text-align: justify;
+}
+  
+.ennemis-personnage {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px;
+    margin-top: -100px;
+    margin-bottom: -60px;
+}
+  
+.bio-info {
+    margin-top: 20px; 
+    text-align: center;
+    h3 {
+        font-family: 'Space_Grotesk_Bold';
+        font-size: 20px;
+    } 
+    span{
+        font-family: 'Space_Grotesk_regular';
+    }
+}
+  
+.ennemis-personnage div:hover{
+    transform: scale(1.1);
+    transition: transform 0.9s ease-in-out;
+    transform-origin: center;
+}
+  
+.allies-title {
+    padding: 75px;
+    font-family: 'Space_Grotesk_Bold';
+    font-size: 26px;
+    img {
+        float: right ;
+        position: relative;
+        margin-bottom: -100px;
+        margin-right: -178px;
+        margin-top: -150px;
+        width: 40%;
+        z-index: 1;
+    }
+}
+  
+.allies-content {
+    width: 85.5%;
+    margin-top: -11rem;
+    padding: 75px;
+    text-align: justify;
+}
+  
+.allies-personnage {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px;
+    margin-top: -100px;
+}
+  
+.bio-info {
+    margin-top: 20px; 
+    text-align: center;
+    h3 {
+        font-family: 'Space_Grotesk_Bold';
+        font-size: 15px;
+    }
+    span{
+        font-family: 'Space_Grotesk_regular';
+    } 
+}
+
+.allies-personnage div:hover{
+    transform: scale(1.1);
+    transition: transform 0.9s ease-in-out;
+    transform-origin: center;
+}
+
+.justice-title {
+    padding: 75px;
+    font-family: 'Space_Grotesk_Bold';
+    font-size: 26px;
+    margin-top: -50px;
+}
+  
+.justice-content {
+    width: 80.5%;
+    margin-top: -11rem;
+    padding: 75px;
+    text-align: justify;
+}
+  
+.league-image >img {
+    margin-top: -50px;
+}
+
+.multimedia-title {
+    padding: 75px;
+    margin-top: -60px; 
+    font-family: 'Space_Grotesk_Bold';
+    font-size: 26px;
+}
+  
+.multimedia-content {
+    margin-top: -150px;
+    background-color: $dark-brown;  
+}
+  
+.multimedia-card {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.card-icon{
+    width: 100% !important;
+    height: auto;
+}
+  
+.card-content {
+    padding: 20px;
+    background: linear-gradient(160deg, var(--ct-gray-light), var(--ct-gray-dark) 60%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    h4 {
+        font-family: 'Space_Grotesk_Regular';
+        font-size: 15px;
+        text-transform: uppercase; 
+        padding: 0;
+    }
+    h5 {
+        font-family: 'Space_Grotesk_Regular';
+        font-size: 25px;
+        margin-left: 0;
+        padding: 0;
+    }
+    span {
+        font-family: 'Rajdhani';
+        font-size: 22px;
+        padding-top: 5px;
+    }
+}
+  
+.card-content span > small {
+  color: var(--ct-yellow-light);
+  font-family: 'Space_Grotesk_Bold';  
+}
+  
+.card-content p {
+    font-family: 'Space_Grotesk_Regular';
+    font-size: 14px;
+    padding-top: 5px;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+  
+.icon-button-prev {
+    position: relative;
+    top: 165px;
+    cursor: pointer;
+    left: 10%;
+    width: 20%;
+    height: auto;
+}
+  
+.icon-button-next {
+    position: relative;
+    left: 86%;
+    bottom: 200px;
+    cursor: pointer;
+}
+  
+.multimedia-bande-annonce{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    padding-bottom: 160px;
+}
+
+#contact {
+    padding: 65px auto;
+    background: linear-gradient(120deg, $gray-light, $gray-dark 80%);
+}
+  
+form {
+    padding-bottom: 35px;
+}
+  
+#contact .contact-content {
+    width: 60%;
+    margin: auto;
+}
+  
+#contact .contact-title > h2 {
+    font-family: "Space_Grotesk_Bold", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    padding-top: 45px;
+}
+  
+#contact .contact-content .input {
+    font-family: "Space_Grotesk_Regular", sans-serif;
+    font-size: 22px;
+    display: block;
+    margin-top: 50px;
+}
+  
+#contact .form-check-label{
+    width: 70%;
+    font-family: "Space_Grotesk_Regular", sans-serif;
+    font-size: 18px;
+    padding-top: 40px;
+}
+  
+.boutton-group, .news{
+      font-family: "Space_Grotesk_Regular", sans-serif;
+      font-size: 18px;
+      padding-top: 40px;
+}
+   
+.news {
+    padding-bottom: 40px;
+}
+  
+#contact .contact-content .boutton-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+  
+#contact .select, #contact .news {
+      margin-top: 60px;
+      border-bottom: 1px solid white;
+}
+  
+#contact .contact-content .select, #contact .contact-content .news {
+    margin-top: 15px;
+    border-bottom: 1px solid var(--color-white);
+}
+  
+#contact .contact-content input[type=email], #contact .contact-content textarea {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid $white-light;
+      padding: 10px 0;
+      margin-top: 20px;
+      outline: none;
+      color: $white-light;
+}
+  
+#contact .contact-content .select #newsletter {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 15px;
+    font-family: "Space_Grotesk_Regular", sans-serif;
+}
+  
+#contact .select #newsletter select {
+    background: blue;
+}
+  
+#contact .contact-content .boutton-group >label {
+    width: 150px;
+    border: 2px solid;
+    -o-border-image: linear-gradient(45deg, $gray-light, $gray-dark) 1;
+    border-image: linear-gradient(45deg, $gray-light, $gray-dark) 1;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+  
+#contact .contact-content .boutton-group >label:hover {
+    background-color: $blue;
+}
+  
+#contact .contact-content input[type=radio] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+  
+#contact .contact-content [type=submit] {
+    margin: 35px auto;
+    display: block;
+    width: 200px;
+    border: none;
+}
+  
+#contact .contact-content ::-moz-placeholder {
+    color: $white-dark;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+}
+  
+#contact .contact-content :-ms-input-placeholder {
+    color: $white-dark;
+    font-size: 18px;
+}
+  
+#contact .contact-content ::placeholder {
+    color: $white-dark;
+    font-size: 18px;
+}
+
+#citation {
+    .single-footer-widget {
+        padding: 90px;
+    }
+    p small {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+}
+  
+.citation-content {
+    width: 50%;
+    text-align: center;
+    margin: 30px auto;
+    margin-top: 0;
+}
+
+.text{
+    font-family: "Space_Grotesk_Regular", sans-serif;
+    font-size: 6px;
+}
+
+.auteur{
+    padding: 15px;
+    color: $white-dark;
+    font-family: "Space_Grotesk_Regular", sans-serif;
+    font-size: 2px;
+    margin-top: -20px;
+}
+
+.auteur p {
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.icon-separation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    display: block;
+    border: 2px solid $blue;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 3px;
+}
+
+.circle-plein {
+    display: block;
+    background: $blue;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 3px;
+}
+
+.icon-guillemets-fermant {
+    float: right;
+}
