@@ -72,8 +72,8 @@
 }
 
 .quiz-container {    
-    width: 60%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 800px;
     margin: 40px auto;
     margin-bottom: 50px;
     border-radius: 10px;
@@ -84,21 +84,24 @@
         text-align: center;
         color: $white-dark;
     }
+    h2 {
+        font-size: 15px;
+        color: $white-dark;
+        margin: 10px 0;
+    }
     .answer-list {
         display: inline;
     }
     .quiz {
         padding: 20px 0;
-        h2 {
-            background-color: red;
-            font-size: 15px;
-            color: $white-dark;
-            margin: 10px 0;
-        }
+        margin-left: 30%;
         .btn {
             background: $gray-light;
+            font-family: 'Rajdhani';
             color: #fff;
-            width: 80%;
+            font-size: 20px;
+            width: 100%;
+            height: 40px;
             border: none;
             padding: 8px 10px;
             margin: 10px 0;
@@ -106,7 +109,6 @@
             cursor: pointer;
         }
     }
-
     #next-question {
         background: $white-dark;
         color: white;
@@ -116,5 +118,9 @@
         cursor: pointer;
         margin-top: 70px;
         display: none;
+    }
+    img {
+        display: block;
+        margin-top: -300px;
     }
 }
