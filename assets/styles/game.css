@@ -273,6 +273,9 @@ ul {
   background: url(../illustrations/illustrations_game/Batgame_1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-size: 100% auto;
 }
 
 .batman-home .container {
